@@ -1,0 +1,3 @@
+SQL es un lenguaje de dominio específico, diseñado para 
+administrar, y recuperar información de sistemas de gestión de 
+bases de datos relacionales.​

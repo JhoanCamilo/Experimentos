@@ -1,0 +1,7 @@
+Bootstrap es una biblioteca multiplataforma o conjunto de 
+herramientas de código abierto para diseño de sitios y 
+aplicaciones web. Contiene plantillas de diseño con tipografía, 
+formularios, botones, cuadros, menús de navegación y otros 
+elementos de diseño basado en HTML y CSS, así como extensiones 
+de JavaScript adicionales. A diferencia de muchos 
+frameworks web, solo se ocupa del desarrollo front-end.

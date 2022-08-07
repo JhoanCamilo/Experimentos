@@ -1,0 +1,5 @@
+Blender es un programa informático multiplataforma, dedicado 
+especialmente al modelado, iluminación, renderizado, la 
+animación y creación de gráficos tridimensionales. También de 
+composición digital utilizando la técnica procesal de nodos, 
+edición de vídeo, escultura y pintura digital.
