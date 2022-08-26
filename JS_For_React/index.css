@@ -5,14 +5,15 @@ main{
     width: fit-content;
     position: relative;
     margin: auto;
+    margin-top: 21px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 5px;
 }
 .card{
     margin: 5px;
-    padding: 5px;
-    border: none;
+    padding: 0px;
+    border: solid 5px red;
     border-radius: 5px;
     transition: .5s;
 }
@@ -20,12 +21,16 @@ main{
     width: 100%;
     border-radius: 5px;
 }
+.card-body{
+    background-color: red;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
 .card h3{
     text-align: center;
 }
 .card:hover{
-    border: solid 1px black;
-    box-shadow: 0px 1px 15px black;
+    box-shadow: 0px 10px 15px #bebebe;
     transform: translateY(-10px);
     transition: .5s;
 }
@@ -34,4 +39,19 @@ main{
     position: relative;
     margin: auto;
     padding: 0;
+}
+button{
+    background-color: white;
+    border: solid 1px black;
+    transition: .5s;
+}
+button:hover{
+    background-color: rgb(0, 162, 255);
+    transition: .5s;
+}
+#Previo{
+    border-radius: 5px 0 0 5px;
+}
+#Sgt{
+    border-radius: 0 5px 5px 0;
 }
