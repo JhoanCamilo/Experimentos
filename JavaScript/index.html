@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario de compra</title>
+</head>
+<body>
+    <h1>Compra de moneda extranjera</h1>
+    <form action="">
+        <h2>Formulario de compra</h2>
+        <div class="seccion">
+            <label for="Document">Tipo de documento: </label><select name="Document" id="Document_Type"></select>
+            <label for="DNumber">Número de documento: </label><input type="number" name="DNumber" id="Documento_Number">
+            <label for="CName">Nombre del cliente: </label><input type="text" name="CName" readonly id="Client_Name">
+        </div>
+        <div class="seccion">
+            <label for="Divisa">Moneda a comprar: </label><select name="Divisa" id="Divisas"></select>
+            <label for="TCompra">Tasa de compra: </label><input type="number" name="TCompra" readonly id="Tasa_Compra">
+            <label for="Cantidad">Cantidad que compra: </label><input type="number" name="Cantidad" id="Cantidad">
+        </div>
+        <div class="seccion">
+            <label for="VPagar">Valor a pagar: </label><input type="text" name="VPagar" readonly id="Valor_Pagar">
+            <label for="Date">Fecha: </label><input type="text" name="Date" readonly id="Fecha">
+            <label for="Hour">Hora: </label><input type="text" name="Hour" readonly id="Hora">
+        </div>
+        <div class="seccion" id="botones">
+            <button>Guardar transacción</button>
+            <button type="reset">Limpiar formulario</button>
+        </div>
+    </form>
+    <script src="Formulario.js"></script>
+</body>
+</html>
