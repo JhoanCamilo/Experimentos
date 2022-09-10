@@ -55,19 +55,23 @@ input{
 }
 #botones{
     position: relative;
-    width: 300px;
+    width: 100%;
     margin: auto;
     margin-top: 20px
 }
 button{
+    position: relative;
     font-size: 15px;
     background-color: #7dc7e5;
-    color: white;
+    color: black;
+    font-weight: 700;
     border: none;
     width: 100px;
+    left: 42%;
     transition: .5s;
 }
 button:hover{
+    color: white;
     background-color: #0cad8d;
     transition: .5s;
     box-shadow: 0px 15px 25px black;
