@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Formulario de compra</title>
 </head>
 <body>
     <h1>Compra de moneda extranjera</h1>
-    <form action="">
-        <h2>Formulario de compra</h2>
+    <form action="" id="FormCompra">
+        <h2 id="FormTittle">Formulario de compra</h2>
         <div class="seccion">
             <label for="Document">Tipo de documento: </label><select name="Document" id="Document_Type">
                 <option value="">-Seleccione una opción-</option>
@@ -23,18 +24,20 @@
                 <option value="">-Seleccione una opción-</option>
             </select>
             <label for="TCompra">Tasa de compra: </label><input type="number" name="TCompra" readonly id="Tasa_Compra">
-            <label for="Cantidad">Cantidad que compra: </label><input type="number" name="Cantidad" id="Cantidad">
+            <label for="Cantidad">Cantidad a comprar: </label><input type="number" name="Cantidad" id="Cantidad" onkeyup="calcular()">
         </div>
         <div class="seccion">
-            <label for="VPagar">Valor a pagar: </label><input type="text" name="VPagar" readonly id="Valor_Pagar">
+            <label for="VPagar">Valor a pagar al clienta: </label><input type="text" name="VPagar" readonly id="Valor_Pagar">
             <label for="Date">Fecha: </label><input type="text" name="Date" readonly id="Fecha">
             <label for="Hour">Hora: </label><input type="text" name="Hour" readonly id="Hora">
         </div>
         <div class="seccion" id="botones">
-            <button>Guardar transacción</button>
-            <button type="reset">Limpiar formulario</button>
+            <button class="FormBtn">Guardar transacción</button>
+            <button type="reset" class="FormBtn" onclick="resetear()">Limpiar formulario</button>
         </div>
     </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="Formulario.js"></script>
 </body>
 </html>

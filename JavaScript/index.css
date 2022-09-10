@@ -10,7 +10,7 @@ h1{
     margin: auto;
     margin-bottom: 10px;
 }
-h2{
+#FormTittle{
     color: white;
     background-color: #2562bc;
     width: fit-content;
@@ -59,7 +59,7 @@ input{
     margin: auto;
     margin-top: 20px
 }
-button{
+.FormBtn{
     position: relative;
     font-size: 15px;
     background-color: #7dc7e5;
@@ -70,7 +70,7 @@ button{
     left: 42%;
     transition: .5s;
 }
-button:hover{
+.FormBtn:hover{
     color: white;
     background-color: #0cad8d;
     transition: .5s;
