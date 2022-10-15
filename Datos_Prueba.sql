@@ -1,0 +1,106 @@
+CREATE DATABASE  IF NOT EXISTS `pruebas` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `pruebas`;
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+--
+-- Host: localhost    Database: pruebas
+-- ------------------------------------------------------
+-- Server version	8.0.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `convertir_clientes`
+--
+
+DROP TABLE IF EXISTS `convertir_clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `convertir_clientes` (
+  `Nombre` text,
+  `Cedula` int DEFAULT NULL,
+  `Trabajo` text,
+  `Telefono` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `convertir_clientes`
+--
+
+LOCK TABLES `convertir_clientes` WRITE;
+/*!40000 ALTER TABLE `convertir_clientes` DISABLE KEYS */;
+INSERT INTO `convertir_clientes` VALUES ('ALEXANDER TORRES',1006,'Trabajo',422),('MARIA CRISTINA CARVAJAL',1007,'Trabajo',423),('MARIA EUGENIA GONZALEZ  ',1008,'Trabajo',424),('WILSON NARVAEZ',1009,'Trabajo',425),('SILVIA LOPEZ',1010,'Trabajo',426),('MARIA TERESA LOPEZ',1011,'Trabajo',427),('JUAN DE DIOS',1012,'Trabajo',428),('LUZ MARY MONTEALEGRE',1013,'Trabajo',429),('SANDRA LUENGAS ',1014,'Trabajo',430),('ANDRES FERNANDO RUIZ',1015,'Trabajo',431),('HECTOR FABIO CANO',1016,'Trabajo',432),('OSCAR GUACHA',1017,'Trabajo',433),('RUBEN DARIO OTALORA',1018,'Trabajo',434),('EDGARDO GOMEZ',1019,'Trabajo',435),('ALIRIO MONTOYA',1020,'Trabajo',436),('JOSE ARDAY CARMONA',1021,'Trabajo',437),('LUZ MERY MEDINA',1022,'Trabajo',438),('ADRIANA VELASCO',1023,'Trabajo',439),('CARLOS MURILLO',1024,'Trabajo',440),('HERNEY HENAO',1025,'Trabajo',441),('ALVARO BURBANO',1026,'Trabajo',442),('YOLANDA MINA',1027,'Trabajo',443),('ALEJANDRA VICTORIA',1028,'Trabajo',444);
+/*!40000 ALTER TABLE `convertir_clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `luz_mila`
+--
+
+DROP TABLE IF EXISTS `luz_mila`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `luz_mila` (
+  `DEUDOR` text,
+  `CAPITAL` int DEFAULT NULL,
+  `INTERESES` double DEFAULT NULL,
+  `INTERESES_PAGAR` int DEFAULT NULL,
+  `ESTADO` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `luz_mila`
+--
+
+LOCK TABLES `luz_mila` WRITE;
+/*!40000 ALTER TABLE `luz_mila` DISABLE KEYS */;
+INSERT INTO `luz_mila` VALUES ('ALEXANDER TORRES',341000,0.035,11935,''),('MARIA CRISTINA CARVAJAL',3400000,0.035,119000,''),('MARIA EUGENIA GONZALEZ  ',3000000,0.035,105000,''),('WILSON NARVAEZ',2500000,0.035,87500,''),('SILVIA LOPEZ',3000000,0.035,105000,''),('MARIA TERESA LOPEZ',360000,0.035,12600,''),('JUAN DE DIOS',1000000,0.035,35000,''),('LUZ MARY MONTEALEGRE',48000,0.04,1920,''),('SANDRA LUENGAS ',550000,0.05,27500,''),('ANDRES FERNANDO RUIZ',922344,0.035,32282,''),('HECTOR FABIO CANO',200000,0.035,7000,''),('OSCAR GUACHA',400000,0.035,14000,''),('RUBEN DARIO OTALORA',2000000,0.035,70000,''),('EDGARDO GOMEZ',3000000,0.035,105000,''),('ALIRIO MONTOYA',12200000,0.035,427000,''),('JOSE ARDAY CARMONA',25800000,0.035,903000,''),('LUZ MERY MEDINA',4000000,0.035,140000,''),('ADRIANA VELASCO',2500000,0.035,87500,''),('CARLOS MURILLO',3000000,0.035,105000,''),('HERNEY HENAO',1183199,0.04,47327,''),('ALVARO BURBANO',750000,0.035,26250,''),('YOLANDA MINA',1400000,0.05,70000,''),('ALEJANDRA VICTORIA',500000,0.05,25000,'');
+/*!40000 ALTER TABLE `luz_mila` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `paula_y_andres_felipe`
+--
+
+DROP TABLE IF EXISTS `paula_y_andres_felipe`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `paula_y_andres_felipe` (
+  `DEUDOR` text,
+  `CAPITAL` int DEFAULT NULL,
+  `INTERESES` double DEFAULT NULL,
+  `INTERESES_PAGAR` int DEFAULT NULL,
+  `ESTADO` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `paula_y_andres_felipe`
+--
+
+LOCK TABLES `paula_y_andres_felipe` WRITE;
+/*!40000 ALTER TABLE `paula_y_andres_felipe` DISABLE KEYS */;
+INSERT INTO `paula_y_andres_felipe` VALUES ('PATRICIA SANDOVAL',3000000,0.05,150000,''),('LILIANA PETTI ANGULO ',3000000,0.05,150000,''),('MARIA DEL PILAR GARCIA RUIZ',430000,0.05,21500,''),('JORGE ALBEIRO LOPERA ',3000000,0.05,150000,''),('ANA RUBY VALENCIA MORENO ',1000000,0.05,50000,''),('RAUL ANDRES ROSERO',3000000,0.05,150000,'');
+/*!40000 ALTER TABLE `paula_y_andres_felipe` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-10-14 22:19:14
